@@ -1,0 +1,43 @@
+---
+title: "RTraining"
+output: html_document
+date: "2024-01-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# The things I learned this week
+
+## I learned basic stats
+
+### For example, t-test
+
+```{r}
+
+# import data
+GardenOzone <- read.csv("Data/GardenOzone.csv")
+
+# t-test
+t.test(Ozone ~ Garden.location, data = GardenOzone)
+
+```
+
+## I learned how to plot 
+
+```{r}
+
+library(ggplot2)
+daphnia <- read.csv("Data/Daphniagrowth.csv")
+
+ggplot(daphnia, aes(x = parasite, y = growth.rate)) +
+  geom_boxplot() +
+  coord_flip() +
+  theme_bw()
+
+```
+
+## And now a photo of a hammer-headed bat
+
+![](https://blog.wcs.org/photo/wp-content/uploads/2018/05/Sarah-Olson-2_20180412_173456.jpg)

@@ -31,7 +31,7 @@ t.test(Ozone ~ Garden.location, data = GardenOzone)
 library(ggplot2)
 daphnia <- read.csv("Data/Daphniagrowth.csv")
 
-ggplot(daphnia, aes(x = parasite, y = growth.rate)) +
+ggplot(daphnia, aes(x = parasite, y = growth.rate, fill = parasite)) +
   geom_boxplot() +
   coord_flip() +
   theme_bw()

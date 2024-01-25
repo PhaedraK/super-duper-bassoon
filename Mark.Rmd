@@ -1,0 +1,63 @@
+---
+title: "RMarkdown Training Session"
+output: html_document
+date: "2024-01-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# My first project
+## Bats forever
+### Hey!
+
+comments do not need ### outside the code box
+
+to write code you have to include it in a code box
+
+```{r}
+x <- rnorm (100, 0, 1)
+y <- rnorm (100, 2, 3)
+plot(x~y)
+
+```
+
+and then you knit to create the report!
+
+```{r, echo = FALSE}
+
+
+
+```
+
+###Useful additions
+
+echo = false to hide the code
+eval = false not run the code when creating the report
+fig.cap = "name" to add captions under my figures
+
+![] for adding images! [name] (file name or link)
+
+you can even add gifs in the report
+
